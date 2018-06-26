@@ -8,39 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-void mergeSort1(int *A, int left, int mid, int right, int *temp) {
-    
-    int i = left;
-    int j = mid + 1;
-    int k = left;
-    while (i <= mid && j <= right) {
-        if (A[i] < A[j]) {
-            temp[k++] = A[i++];
-        } else {
-            temp[k++] = A[j++];
-        }
-    }
-    while (i <= mid) {
-        temp[k++] = A[i++];
-    }
-    while (j <= right) {
-        temp[k++] = A[j++];
-    }
-    
-    memcpy(A + left, temp + left, sizeof(int)*(right - left + 1));
-    
-}
-
-void merge1(int A[], int left, int right, int *temp) {
-    int mid = 0;
-    if (left < right) {
-        mid = left + (right - left) / 2;
-        merge1(A, left, mid, temp);
-        merge1(A, mid + 1, right, temp);
-        mergeSort1(A, left, mid, right, temp);
-    }
-}
-
 void mergeAdd(int arr[], int left, int mid, int right, int *temp){
     int i = left;
     int j = mid + 1;
@@ -83,7 +50,7 @@ int main(int argc, const char * argv[]) {
         int arr[] = {8, 9, 3, 4, 5, 2, 1, 7, 6};
         int num = sizeof(arr) / sizeof(arr[0]);
         int *temp = (int *)malloc(sizeof(int)*num);
-        merge1(arr, 0, num - 1, temp);
+        mergeSort(arr, 0, num - 1, temp);
         
         for (int i = 0; i < num; i++) {
             printf("index : %d value:  %d\n",i, arr[i]);
