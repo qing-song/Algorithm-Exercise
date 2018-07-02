@@ -37,12 +37,17 @@
 		<key>HeapSort.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>InsertSort.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>MaxSubsequence.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>MergeSort.xcscheme</key>
 		<dict>
@@ -62,7 +67,7 @@
 		<key>SelectSort.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>SheelSort.xcscheme</key>
 		<dict>

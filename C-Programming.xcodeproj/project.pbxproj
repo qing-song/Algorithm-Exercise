@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034DB84520E47294001B9CA2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 034DB84420E47294001B9CA2 /* main.c */; };
 		037A23F520D0B4CB00EB7BCD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 037A23F420D0B4CB00EB7BCD /* main.c */; };
 		03D0F21220E0C6770045C6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D0F21120E0C6770045C6A4 /* main.m */; };
 		03D0F21D20E0D5100045C6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D0F21C20E0D5100045C6A4 /* main.m */; };
@@ -18,6 +19,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		034DB84020E47294001B9CA2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		037A23F020D0B4CB00EB7BCD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		034DB84220E47294001B9CA2 /* MaxSubsequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxSubsequence; sourceTree = BUILT_PRODUCTS_DIR; };
+		034DB84420E47294001B9CA2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		037A23F220D0B4CB00EB7BCD /* HeapSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HeapSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		037A23F420D0B4CB00EB7BCD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		03D0F20F20E0C6770045C6A4 /* SelectSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SelectSort; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +115,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		034DB83F20E47294001B9CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037A23EF20D0B4CB00EB7BCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034DB84320E47294001B9CA2 /* MaxSubsequence */ = {
+			isa = PBXGroup;
+			children = (
+				034DB84420E47294001B9CA2 /* main.c */,
+			);
+			path = MaxSubsequence;
+			sourceTree = "<group>";
+		};
 		037A23F320D0B4CB00EB7BCD /* HeapSort */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +216,7 @@
 				037A23F320D0B4CB00EB7BCD /* HeapSort */,
 				03D0F21020E0C6770045C6A4 /* SelectSort */,
 				03D0F21B20E0D5100045C6A4 /* MergeSort */,
+				034DB84320E47294001B9CA2 /* MaxSubsequence */,
 				03D9B6E620C0DF7800CFD7AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,6 +231,7 @@
 				037A23F220D0B4CB00EB7BCD /* HeapSort */,
 				03D0F20F20E0C6770045C6A4 /* SelectSort */,
 				03D0F21A20E0D5100045C6A4 /* MergeSort */,
+				034DB84220E47294001B9CA2 /* MaxSubsequence */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +273,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		034DB84120E47294001B9CA2 /* MaxSubsequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034DB84820E47294001B9CA2 /* Build configuration list for PBXNativeTarget "MaxSubsequence" */;
+			buildPhases = (
+				034DB83E20E47294001B9CA2 /* Sources */,
+				034DB83F20E47294001B9CA2 /* Frameworks */,
+				034DB84020E47294001B9CA2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxSubsequence;
+			productName = MaxSubsequence;
+			productReference = 034DB84220E47294001B9CA2 /* MaxSubsequence */;
+			productType = "com.apple.product-type.tool";
+		};
 		037A23F120D0B4CB00EB7BCD /* HeapSort */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 037A23F820D0B4CB00EB7BCD /* Build configuration list for PBXNativeTarget "HeapSort" */;
@@ -372,6 +418,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = qingsong;
 				TargetAttributes = {
+					034DB84120E47294001B9CA2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					037A23F120D0B4CB00EB7BCD = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -414,11 +463,20 @@
 				037A23F120D0B4CB00EB7BCD /* HeapSort */,
 				03D0F20E20E0C6770045C6A4 /* SelectSort */,
 				03D0F21920E0D5100045C6A4 /* MergeSort */,
+				034DB84120E47294001B9CA2 /* MaxSubsequence */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		034DB83E20E47294001B9CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034DB84520E47294001B9CA2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		037A23EE20D0B4CB00EB7BCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,6 +537,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		034DB84620E47294001B9CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		034DB84720E47294001B9CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		037A23F620D0B4CB00EB7BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -725,6 +803,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		034DB84820E47294001B9CA2 /* Build configuration list for PBXNativeTarget "MaxSubsequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034DB84620E47294001B9CA2 /* Debug */,
+				034DB84720E47294001B9CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		037A23F820D0B4CB00EB7BCD /* Build configuration list for PBXNativeTarget "HeapSort" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
